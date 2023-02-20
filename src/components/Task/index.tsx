@@ -6,8 +6,8 @@ import { Trash } from "phosphor-react-native";
 
 interface TaskProps {
   task: TaskListProps;
-  handleRemoveTask: (id: number) => void;
-  handleToggleStatusTask: (id: number) => void;
+  handleRemoveTask: (id: string) => void;
+  handleToggleStatusTask: (id: string) => void;
 }
 
 export function Task({

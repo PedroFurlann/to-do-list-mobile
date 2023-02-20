@@ -1,11 +1,11 @@
 import { PlusCircle } from "phosphor-react-native";
 import { useState } from "react";
-import { TextInput, TouchableOpacity, View } from "react-native";
+import { StyleSheet, Text, TextInput, TouchableOpacity, View } from "react-native";
 import { Header } from "../../components/Header";
 import { styles } from "./styles";
 
 export interface TaskListProps {
-  id: number
+  id: string
   content: string
   isCompleted: boolean
 }
@@ -31,9 +31,24 @@ export function Home() {
           <PlusCircle color="#fff" size={16}/>
         </TouchableOpacity>
       </View>
-
-      <View>
+        
+      <View style={styles.headerTaskList}>
+        <View style={styles.alignTextAndNumber}>
+          <Text style={styles.textTasksCreated}>Criadas</Text>
+          <Text style={styles.numberTasksCreated}>{taskCreatedCount}</Text>
+        </View>
+        <View style={styles.alignTextAndNumber}>
+          <Text style={styles.textTasksCompleted}>Concluídas</Text>
+          <Text style={styles.numberTasksCompleted}>{tasksCompletedCount}</Text>
+        </View>
       </View>
+      <View style={{
+        borderBottomColor: '#808080',
+        borderBottomWidth: StyleSheet.hairlineWidth,
+        marginLeft: 24,
+        marginRight: 24,
+        marginTop: 20
+      }} />
     </View>
   )
 }

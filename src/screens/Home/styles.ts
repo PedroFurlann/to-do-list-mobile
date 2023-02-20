@@ -37,5 +37,53 @@ export const styles = StyleSheet.create({
 
     alignItems: 'center',
     justifyContent: 'center'
+  },
+
+  headerTaskList: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginTop: 32,
+    marginLeft: 24,
+    marginRight: 24,
+  },
+
+  alignTextAndNumber: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
+  textTasksCreated: {
+    color: '#4EA8DE'
+  },
+
+  textTasksCompleted: {
+    color: '#8284FA'
+  },
+
+  numberTasksCreated: {
+    backgroundColor: '#808080',
+    color: '#D9D9D9',
+    borderRadius: 99999,
+    marginLeft: 10,
+    fontSize: 12,
+    width: 25,
+    textAlign: 'center',
+
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+
+  numberTasksCompleted: {
+    backgroundColor: '#808080',
+    color: '#D9D9D9',
+    borderRadius: 99999,
+    marginLeft: 10,
+    fontSize: 12,
+    width: 25,
+    textAlign: 'center',
+
+    alignItems: 'center',
+    justifyContent: 'center'
   }
 })
