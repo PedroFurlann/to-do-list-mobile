@@ -1,6 +1,7 @@
 import { PlusCircle } from "phosphor-react-native";
 import { useState } from "react";
 import { StyleSheet, Text, TextInput, TouchableOpacity, View } from "react-native";
+import { EmptyTaskList } from "../../components/EmptyTaskList";
 import { Header } from "../../components/Header";
 import { styles } from "./styles";
 
@@ -42,13 +43,7 @@ export function Home() {
           <Text style={styles.numberTasksCompleted}>{tasksCompletedCount}</Text>
         </View>
       </View>
-      <View style={{
-        borderBottomColor: '#808080',
-        borderBottomWidth: StyleSheet.hairlineWidth,
-        marginLeft: 24,
-        marginRight: 24,
-        marginTop: 20
-      }} />
+      <EmptyTaskList />
     </View>
   )
 }

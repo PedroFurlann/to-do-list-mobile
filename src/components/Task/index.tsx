@@ -1,5 +1,5 @@
 import { TaskListProps } from "../../screens/Home";
-import { MaterialCommunityIcons, Feather } from "@expo/vector-icons";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { Text, TouchableOpacity, View } from "react-native";
 import { styles } from "./styles";
 import { Trash } from "phosphor-react-native";
