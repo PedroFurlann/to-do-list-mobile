@@ -11,7 +11,7 @@ export function EmptyTaskList() {
         marginLeft: 24,
         marginRight: 24,
         marginTop: 20,
-        marginBottom: 30
+        marginBottom: 50
       }} />
       
       <View style={styles.emptyTaskListContainer}>

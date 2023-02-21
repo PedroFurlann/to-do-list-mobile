@@ -6,18 +6,18 @@ import { Trash } from "phosphor-react-native";
 
 interface TaskProps {
   task: TaskListProps;
-  handleRemoveTask: (id: string) => void;
-  handleToggleStatusTask: (id: string) => void;
+  handleRemoveTask: (id: number) => void;
+  handleToggleTaskStatus: (id: number) => void;
 }
 
 export function Task({
   handleRemoveTask,
-  handleToggleStatusTask,
+  handleToggleTaskStatus,
   task,
 }: TaskProps) {
   return (
     <View style={styles.container}>
-      <TouchableOpacity onPress={() => handleToggleStatusTask(task.id)}>
+      <TouchableOpacity onPress={() => handleToggleTaskStatus(task.id)}>
         <MaterialCommunityIcons
           style={styles.icon}
           name={
