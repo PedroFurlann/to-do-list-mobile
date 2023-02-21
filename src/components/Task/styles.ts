@@ -2,9 +2,10 @@ import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
   container: {
-    marginTop: 12,
-    paddingLeft: 12,
-    width: '100%',
+    marginLeft: 24,
+    marginRight: 24,
+    marginBottom: 4,
+    maxWidth: '100%',
     height: 64,
 
     flexDirection: 'row',
@@ -35,7 +36,7 @@ export const styles = StyleSheet.create({
     marginRight: 10,
     fontSize: 14,
     fontWeight: 'bold',
-    color: 'f2f2f2',
+    color: '#f2f2f2',
     alignItems: 'center',
     flex: 1,
   },

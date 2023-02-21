@@ -45,6 +45,7 @@ export const styles = StyleSheet.create({
     marginTop: 32,
     marginLeft: 24,
     marginRight: 24,
+    marginBottom: 20,
   },
 
   alignTextAndNumber: {

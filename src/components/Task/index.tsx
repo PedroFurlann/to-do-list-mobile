@@ -34,7 +34,7 @@ export function Task({
         style={
           task.isCompleted
             ? styles.taskCompletedContent
-            : styles.taskCompletedContent
+            : styles.taskCreatedContent
         }
       >
         {task.content}

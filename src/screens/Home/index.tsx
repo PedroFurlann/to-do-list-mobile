@@ -26,23 +26,24 @@ export function Home() {
   const [taskContent, setTaskContent] = useState("");
 
   function handleToggleTaskStatus(id: number) {
-    setTasksCreated((state) => state.map((task) => {
-      if (task.id == id) {
-        if (task.isCompleted == false) {
-          setTasksCompletedCount(acc => acc + 1)
+    setTasksCreated((state) =>
+      state.map((task) => {
+        if (task.id == id) {
+          if (task.isCompleted == false) {
+            setTasksCompletedCount((acc) => acc + 1);
+          } else {
+            setTasksCompletedCount((acc) => acc - 1);
+          }
+          return { ...task, isCompleted: !task.isCompleted };
         } else {
-          setTasksCompletedCount(acc => acc - 1)
+          return task;
         }
-        return {...task, isCompleted: !task.isCompleted}
-      } else {
-        return task
-      }
-    }))
+      })
+    );
   }
 
   function handleDeleteTask(id: number) {
-    const taskCompleted =
-      tasksCreated.find((task) => task.id == id)
+    const taskCompleted = tasksCreated.find((task) => task.id == id);
 
     if (taskCompleted?.isCompleted === true) {
       return Alert.alert(
@@ -51,7 +52,7 @@ export function Home() {
       );
     }
 
-    Alert.alert("Deletar task", "Dejese deletar essa task da lista?", [
+    Alert.alert("Deletar tarefa", "Deseja deletar essa tarefa da lista?", [
       {
         text: "Sim",
         onPress: () => {
@@ -59,13 +60,27 @@ export function Home() {
             return state.filter((task) => task.id !== id);
           });
 
-          setTaskCreatedCount(acc => acc - 1)
+          setTaskCreatedCount((acc) => acc - 1);
         },
+      },
+
+      {
+        text: "Não",
+        style: "cancel",
       },
     ]);
   }
 
   function handleCreateTask() {
+    const taskAlreadyCreated = tasksCreated.find((task) => task.id);
+
+    if (taskAlreadyCreated?.content === taskContent) {
+      return Alert.alert(
+        "Tarefa existente",
+        "Por favor, digite uma tarefa que ainda não foi criada"
+      );
+    }
+
     if (taskContent === "") {
       return Alert.alert(
         "Tarefa vazia!",
@@ -112,11 +127,11 @@ export function Home() {
           <Text style={styles.numberTasksCompleted}>{tasksCompletedCount}</Text>
         </View>
       </View>
-      <FlatList 
+      <FlatList
         data={tasksCreated}
         keyExtractor={(task) => String(task.id)}
         renderItem={({ item }) => (
-          <Task 
+          <Task
             key={item.id}
             task={item}
             handleRemoveTask={handleDeleteTask}
@@ -125,9 +140,7 @@ export function Home() {
         )}
         showsHorizontalScrollIndicator={false}
         showsVerticalScrollIndicator={false}
-        ListEmptyComponent={() => (
-          <EmptyTaskList />
-        )}
+        ListEmptyComponent={() => <EmptyTaskList />}
       />
     </View>
   );
