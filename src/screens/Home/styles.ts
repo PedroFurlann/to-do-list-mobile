@@ -55,11 +55,13 @@ export const styles = StyleSheet.create({
   },
 
   textTasksCreated: {
-    color: '#4EA8DE'
+    color: '#4EA8DE',
+    fontWeight: 'bold',
   },
 
   textTasksCompleted: {
-    color: '#8284FA'
+    color: '#8284FA',
+    fontWeight: 'bold'
   },
 
   numberTasksCreated: {
