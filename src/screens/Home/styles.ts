@@ -61,7 +61,7 @@ export const styles = StyleSheet.create({
 
   textTasksCompleted: {
     color: '#8284FA',
-    fontWeight: 'bold'
+    fontWeight: 'bold',
   },
 
   numberTasksCreated: {
