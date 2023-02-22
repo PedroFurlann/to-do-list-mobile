@@ -41,7 +41,7 @@ $ expo start
 - #### Typescript
 - #### Expo
 
-### How to Start the application on your machine :arow_down:
+### How to Start the application on your machine :arrow_down:
 
 ```bash
 
