@@ -25,7 +25,7 @@ export function Task({
               ? "checkbox-marked-circle"
               : "checkbox-blank-circle-outline"
           }
-          size={18}
+          size={20}
           color={task.isCompleted ? "#5E60CE" : "#4EA8DE"}
         />
       </TouchableOpacity>
@@ -44,7 +44,7 @@ export function Task({
         onPress={() => handleRemoveTask(task.id)}
         style={styles.btn}
       >
-        <Trash size={14} color='#808080' />
+        <Trash size={16} color='#808080' />
       </TouchableOpacity>
     </View>
   );

@@ -5,6 +5,7 @@ export const styles = StyleSheet.create({
   emptyTaskListContainer: {
     alignItems: 'center',
     justifyContent: 'center',
+    marginTop: 18
   },
 
   textBold: {

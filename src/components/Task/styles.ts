@@ -37,6 +37,7 @@ export const styles = StyleSheet.create({
     fontSize: 14,
     fontWeight: 'bold',
     color: '#f2f2f2',
+
     alignItems: 'center',
     flex: 1,
   },
@@ -47,8 +48,10 @@ export const styles = StyleSheet.create({
     fontSize: 14,
     fontWeight: 'bold',
     color: '#808080',
+
     alignItems: 'center',
     flex: 1,
+    
     textDecorationLine: 'line-through',
   }
 })
