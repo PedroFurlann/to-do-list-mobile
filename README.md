@@ -65,6 +65,6 @@ $ expo start
 ### Imagens do Aplicativo / App Images :camera:
 
 <div style="display: flex">
-  ![alt text](https://raw.githubusercontent.com/PedroFurlann/to-do-list-mobile/main/src/assets/todoEmpty.png)
-  ![alt text](https://raw.githubusercontent.com/PedroFurlann/to-do-list-mobile/main/src/assets/todoList.png)
+  <img src="https://raw.githubusercontent.com/PedroFurlann/to-do-list-mobile/main/src/assets/todoEmpty.png" />
+  <img src="https://raw.githubusercontent.com/PedroFurlann/to-do-list-mobile/main/src/assets/todoList.png" />
 </div>
