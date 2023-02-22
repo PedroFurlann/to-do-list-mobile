@@ -2,15 +2,15 @@
 
 ## (PT-BR)
 
-### Se trata de uma aplicação mobile feita com react native que tem como objetivo criar uma lista de tarefas e gerenciá-las (completas, incompletas) :bookmark_tabs:
+## Se trata de uma aplicação mobile feita com react native que tem como objetivo criar uma lista de tarefas e gerenciá-las (completas, incompletas) :bookmark_tabs:
 
-#### Tecnologias Usadas :computer:
+### Tecnologias Usadas :computer:
 
-###### * React Native
-###### * Typescript
-###### * Expo
+- ####  React Native
+- ####  Typescript
+- ####  Expo
 
-#### Como Iniciar a aplicação na sua máquina :arow_down:
+### Como Iniciar a aplicação na sua máquina :arow_down:
 
 ```bash
 
@@ -33,15 +33,15 @@ $ expo start
 
 ## (EN) :us:
 
-### This is a mobile application made with react native that aims to create a list of tasks and manage them (complete, incomplete) :bookmark_tabs:
+## This is a mobile application made with react native that aims to create a list of tasks and manage them (complete, incomplete) :bookmark_tabs:
 
-#### Used Technologies :computer:
+### Used Technologies :computer:
 
-###### * React Native
-###### * Typescript
-###### * Expo
+- #### React Native
+- #### Typescript
+- #### Expo
 
-#### How to Start the application on your machine :arow_down:
+### How to Start the application on your machine :arow_down:
 
 ```bash
 
@@ -62,7 +62,7 @@ $ expo start
 
 ```
 
-#### Imagens do Aplicativo / App Images :camera:
+### Imagens do Aplicativo / App Images :camera:
 
 <div style="display: flex">
   <img src="./assets/todoEmpty.png" />
