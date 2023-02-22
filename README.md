@@ -10,7 +10,7 @@
 - ####  Typescript
 - ####  Expo
 
-### Como Iniciar a aplicação na sua máquina :arow_down:
+### Como Iniciar a aplicação na sua máquina :arrow_down:
 
 ```bash
 
@@ -65,6 +65,6 @@ $ expo start
 ### Imagens do Aplicativo / App Images :camera:
 
 <div style="display: flex">
-  <img src="./assets/todoEmpty.png" />
-  <img src="./assets/todoList.png" />
+  ![alt text](https://raw.githubusercontent.com/PedroFurlann/to-do-list-mobile/main/src/assets/todoEmpty.png)
+  ![alt text](https://raw.githubusercontent.com/PedroFurlann/to-do-list-mobile/main/src/assets/todoList.png)
 </div>
