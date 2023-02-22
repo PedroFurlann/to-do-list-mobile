@@ -48,7 +48,7 @@ export function Home() {
     if (taskCompleted?.isCompleted === true) {
       return Alert.alert(
         "Operação Inválida",
-        "Tarefas Completadas não podem ser removidas"
+        "Tarefas completadas não podem ser removidas"
       );
     }
 
@@ -91,7 +91,7 @@ export function Home() {
     setTasksCreated((state) => [
       ...state,
       {
-        id: Math.round(Math.random() * 100),
+        id: Math.round(Math.random() * 10000),
         content: taskContent,
         isCompleted: false,
       },
